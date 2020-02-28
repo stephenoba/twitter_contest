@@ -28,7 +28,7 @@ SECRET_KEY = 'aca36705f453970477c6c1c2f1f966d2b09909a359d4387f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ai6phtwittercontest.herokuapp.com/', "https://ai6phtwittercontest.herokuapp.com/ "]
+ALLOWED_HOSTS = ['ai6phtwittercontest.herokuapp.com',]
 
 
 # Application definition
