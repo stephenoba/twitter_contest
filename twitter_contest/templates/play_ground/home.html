@@ -58,6 +58,12 @@
                                 <td>{{ contestant.twitter_handle }}</td>
                                 <td>{{ contestant.points }}</td>
                             </tr>
+                            {% empty %}
+                            <tr>
+                                <th scope="row">{{ forloop.counter }}</th>
+                                <td>No Contestants yet</td>
+                                <td></td>
+                            </tr>
                             {% endfor %}
                         </tbody>
                     </table>
