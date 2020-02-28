@@ -8,7 +8,7 @@ empty_items = [None, " ", "None"]
 twitter_url = "https://twitter.com/"
 mentions_pattern = re.compile(r"@AI6ph", re.DOTALL)
 name_one = re.compile(r'ai6 portharcourt', re.IGNORECASE | re.DOTALL)
-name_two = re.compile(r'chris', re.IGNORECASE | re.DOTALL)
+name_two = re.compile(r'ai6 ph', re.IGNORECASE | re.DOTALL)
 pic_link = re.compile(r'pic.\S+', re.IGNORECASE | re.DOTALL)
 
 
