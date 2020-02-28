@@ -72,6 +72,16 @@
                     <div class="card">
                         <form method="POST" class="card-body">
                             <h4>Join the fun</h4>
+                            <p>
+                                Enter your Twitter handle and your email address, and
+                                tweet your way to victory.
+                            </p>
+                            <p>
+                                All you have to do is tweet about
+                                "AI6 PortHarcourt" or mention us on twitter with our
+                                <a href="https://twitter.com/AI6ph">twitter handle</a>.
+                                You get 3 points per tweet.
+                            </p>
                             {% csrf_token %}
                             <div class="md-form ">
                                 {{ form.twitter_handle }}
