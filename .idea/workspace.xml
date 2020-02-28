@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad86389-a3d2-44a4-94d3-152b2d499459" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twitter_contest/templates/play_ground/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_contest/templates/play_ground/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twitter_contest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/twitter_contest/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twitter_contest/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
@@ -34,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitter_contest/templates/play_ground/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
@@ -136,8 +135,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/play_ground/forms.py" />
         <option value="$PROJECT_DIR$/play_ground/twitter_scraper.py" />
-        <option value="$PROJECT_DIR$/twitter_contest/settings.py" />
         <option value="$PROJECT_DIR$/twitter_contest/templates/play_ground/home.html" />
+        <option value="$PROJECT_DIR$/twitter_contest/settings.py" />
       </list>
     </option>
   </component>
@@ -387,22 +386,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twitter_contest/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#314#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twitter_contest/templates/play_ground/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twitter_contest/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
           </folding>
         </state>
       </provider>
