@@ -3,10 +3,12 @@ from bs4 import BeautifulSoup
 import re
 
 class_name = "TweetTextSize"
+class_name2 = "twitter-atreply"
 container_tags = ["p"]
+container_tags2 = ["a"]
 empty_items = [None, " ", "None"]
 twitter_url = "https://twitter.com/"
-mentions_pattern = re.compile(r"AI6ph", re.IGNORECASE | re.DOTALL)
+mentions_pattern = re.compile(r'AI6ph', re.DOTALL)
 name_one = re.compile(r'ai6 portharcourt', re.IGNORECASE | re.DOTALL)
 name_two = re.compile(r'ai6 ph', re.IGNORECASE | re.DOTALL)
 pic_link = re.compile(r'pic.\S+', re.IGNORECASE | re.DOTALL)
@@ -22,9 +24,20 @@ def get_elements(twitter_handle):
     return soup.find_all(container_tags, attrs={"class": class_name})
 
 
+def get_mentions(twitter_handle):
+    """:returns all mentions from user"""
+    url = twitter_url + twitter_handle
+    response = requests.get(url)
+    html = response.content
+    soup = BeautifulSoup(html, features="html.parser")
+
+    return soup.find_all(container_tags2, attrs={"class": class_name2})
+
+
 def get_user_tweets(twitter_handle):
     """:returns tweets that mention AI6"""
-    elements = get_elements(twitter_handle)
+    elements = get_mentions(twitter_handle) + get_elements(twitter_handle)
+    print(elements)
     tweets = []
     for post in elements[:20]:
         for text in post.contents:
@@ -41,8 +54,7 @@ def get_user_tweets(twitter_handle):
 def remove_media_url(tweets):
     cleaned_tweets = []
     for tweet in tweets:
-        text_without_url = pic_link.sub(r"", tweet)
-        t = mentions_pattern.sub(r"", text_without_url)
+        t = pic_link.sub(r"", tweet)
         if t != "":
             cleaned_tweets.append(t)
 
