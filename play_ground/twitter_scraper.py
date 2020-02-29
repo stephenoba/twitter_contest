@@ -37,7 +37,6 @@ def get_mentions(twitter_handle):
 def get_user_tweets(twitter_handle):
     """:returns tweets that mention AI6"""
     elements = get_mentions(twitter_handle) + get_elements(twitter_handle)
-    print(elements)
     tweets = []
     for post in elements[:20]:
         for text in post.contents:
