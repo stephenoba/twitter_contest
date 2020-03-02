@@ -16,7 +16,7 @@ class Contestant(models.Model):
 
 class Tweet(models.Model):
     twitter_handle = models.ForeignKey(Contestant, on_delete=models.CASCADE)
-    tweet = models.CharField(max_length=200)
+    tweet = models.TextField(blank=True)
     time_stamp = models.DateTimeField(auto_now_add=True)
 
     class Meta:
