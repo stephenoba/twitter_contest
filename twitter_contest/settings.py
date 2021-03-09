@@ -13,17 +13,19 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import django_heroku
 import twitter_contest as project_module
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
 
+load_dotenv(os.path.join(PROJECT_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY", None)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
